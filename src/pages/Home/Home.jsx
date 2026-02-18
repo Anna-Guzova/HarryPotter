@@ -1,5 +1,7 @@
+import Hero from '../../components/Hero/Hero';
 import { useCharacters } from '../../hooks/useCharacters';
 import CharacterCard from '../../components/CharacterCard/CharacterCard';
+import CharactersGrid from '../../components/CharactersGrid/CharactersGrid';
 
 function Home() {
   const { characters, loading } = useCharacters();
@@ -7,12 +9,11 @@ function Home() {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div>
-      <h1>Characters</h1>
-      {characters.map(character => (
-        <CharacterCard key={character.id} character={character} />
-      ))}
-    </div>
+    <>
+      <Hero />
+
+      {loading ? <p>Loading...</p> : <CharactersGrid characters={characters} />}
+    </>
   );
 }
 
