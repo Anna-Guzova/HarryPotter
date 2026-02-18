@@ -1,7 +1,7 @@
 import './Hero.css';
 import hogwartsImg from '../../assets/images/hogwarts.jpg';
 
-function Hero() {
+function Hero({ onShowCategories }) {
   return (
     <section
       className="hero"
@@ -12,7 +12,9 @@ function Hero() {
           Ласкаво просимо <br /> у світ Гаррі Поттера
         </h1>
 
-        <button className="hero-btn">Показати всіх персонажів</button>
+        <button className="hero-btn" onClick={onShowCategories}>
+          Показати всіх персонажів
+        </button>
       </div>
     </section>
   );
