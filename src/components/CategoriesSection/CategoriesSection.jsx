@@ -1,19 +1,18 @@
 import './CategoriesSection.css';
 
+import CategoryCard from '../CategoryCard/CategoryCard';
+
+import studentsImg from '../../assets/images/students.jpg';
+import staffImg from '../../assets/images/staff.jpg';
+import houseImg from '../../assets/images/house.jpg';
+
 function CategoriesSection() {
   return (
     <section className="categories">
       <div className="categories-container">
-        <div className="category-card">
-          <p>Студенти Гогвардсу</p>
-        </div>
-        <div className="category-card">
-          <p>Співробітники Гогвартсу</p>
-        </div>
-
-        <div className="category-card">
-          <p>Персонажі в певному будинку</p>
-        </div>
+        <CategoryCard title="Студенти Гогвардсу" image={studentsImg} />
+        <CategoryCard title="Співробітники Гогвардсу" image={staffImg} />
+        <CategoryCard title="Персонажі в певному будинку" image={houseImg} />
       </div>
     </section>
   );

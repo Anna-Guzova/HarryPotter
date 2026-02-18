@@ -1,6 +1,5 @@
 .hero {
   height: 600px;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,15 +32,15 @@
 }
 
 .hero-title {
-  color: #f5c518;
-  font-size: 64px;
+  color: #fabf59;
+  font-size: 80px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 30px;
 }
 
 .hero-btn {
-  background: #f5c518;
+  background: #fabf59;
   color: #000;
 
   border: none;
