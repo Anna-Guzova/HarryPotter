@@ -17,9 +17,9 @@ function AppRouter() {
             </MainLayout>
           }
         />
-        <Route path="/house/:id" element={<House />} />
         <Route path="/students" element={<Students />} />
         <Route path="/staff" element={<Staff />} />
+        <Route path="/house" element={<House />} />
       </Routes>
     </BrowserRouter>
   );

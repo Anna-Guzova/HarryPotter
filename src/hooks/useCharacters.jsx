@@ -6,10 +6,18 @@ export function useCharacters() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getAllCharacters().then(data => {
-      setCharacters(data);
-      setLoading(false);
-    });
+    const fetchData = async () => {
+      try {
+        const data = await getAllCharacters();
+        setCharacters(data);
+      } catch (error) {
+        console.error('ERROR:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return { characters, loading };

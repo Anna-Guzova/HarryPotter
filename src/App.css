@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Bluu Next', serif;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)
+    )
+    #1a1a1a;
+  color: white;
+}
+
+@font-face {
+  font-family: 'Bluu Next';
+  src: url('./assets/fonts/BluuNextCyrillic.woff2');
+}

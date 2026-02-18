@@ -1,8 +1,14 @@
+import CharacterCard from '../CharacterCard/CharacterCard';
+import './CharactersGrid.css';
+
 function CharactersGrid({ characters }) {
   return (
-    <div>
+    <div className="characters-grid">
       {characters.map(character => (
-        <p key={character.name}>{character.name}</p>
+        <CharacterCard
+          key={character.id || character.name}
+          character={character}
+        />
       ))}
     </div>
   );

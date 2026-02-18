@@ -1,0 +1,54 @@
+.character-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #111;
+  height: 452px;
+  width: 295px;
+  transition: 0.3s;
+}
+
+.character-card:hover {
+  transform: translateY(-6px);
+}
+
+.character-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* затемнення як у макеті */
+.character-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0.4),
+    transparent
+  );
+
+  color: white;
+}
+
+.character-overlay h3 {
+  margin: 0 0 6px;
+}
+
+.character-overlay span {
+  color: #f4c542;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  color: #f4c542;
+  cursor: pointer;
+}

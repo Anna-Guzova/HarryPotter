@@ -10,9 +10,21 @@ function CategoriesSection() {
   return (
     <section className="categories">
       <div className="categories-container">
-        <CategoryCard title="Студенти Гогвардсу" image={studentsImg} />
-        <CategoryCard title="Співробітники Гогвардсу" image={staffImg} />
-        <CategoryCard title="Персонажі в певному будинку" image={houseImg} />
+        <CategoryCard
+          title="Студенти Гогвардсу"
+          image={studentsImg}
+          link="/students"
+        />
+        <CategoryCard
+          title="Співробітники Гогвардсу"
+          image={staffImg}
+          link="/staff"
+        />
+        <CategoryCard
+          title="Персонажі в певному будинку"
+          image={houseImg}
+          link="/house"
+        />
       </div>
     </section>
   );
