@@ -1,12 +1,11 @@
 import { useCharacters } from '../../hooks/useCharacters';
 import CharactersGrid from '../../components/CharactersGrid/CharactersGrid';
+import { hasImage } from '../../utils/filterCharacters';
 import './Students.css';
 function Students() {
   const { characters, loading } = useCharacters();
 
-  const students = characters.filter(
-    character => character.hogwartsStudent === true,
-  );
+  const students = characters.filter(c => c.hogwartsStudent).filter(hasImage);
 
   if (loading) return <p>Loading...</p>;
 

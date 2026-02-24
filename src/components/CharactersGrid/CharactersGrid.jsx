@@ -13,5 +13,4 @@ function CharactersGrid({ characters }) {
     </div>
   );
 }
-
 export default CharactersGrid;

@@ -1,0 +1,53 @@
+.house-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin: 40px 0;
+
+  background: #111;
+  border-radius: 40px;
+  border: 1px solid #444;
+  padding: 6px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* кнопка */
+.house-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+
+  background: transparent;
+  color: #ccc;
+
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  transition: 0.25s ease;
+}
+
+/* іконка */
+.house-tab img {
+  width: 20px;
+  height: 20px;
+}
+
+/* hover */
+.house-tab:hover {
+  color: white;
+}
+
+/* активна кнопка */
+.house-tab.active {
+  background: #f4c542;
+  color: black;
+  box-shadow: 0 4px 20px rgba(244, 197, 66, 0.3);
+}
