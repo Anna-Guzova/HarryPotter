@@ -20,7 +20,7 @@ function House() {
           className={`house-tab ${house === 'Gryffindor' ? 'active' : ''}`}
           onClick={() => setHouse('Gryffindor')}
         >
-          <img src="/images/gryffindor.png" alt="" />
+          <img src={process.env.PUBLIC_URL + '/images/gryffindor.png'} alt="" />
           GRYFFINDOR
         </button>
 
