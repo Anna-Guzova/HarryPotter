@@ -1,9 +1,7 @@
-const BASE_URL = 'https://hp-api.onrender.com/api';
+const { REACT_APP_API_URL } = process.env;
 
 export const getAllCharacters = async () => {
-  const response = await fetch(`${BASE_URL}/characters`);
-  // console.log('STATUS:', response.status);
+  const response = await fetch(`${REACT_APP_API_URL}/characters`);
   const data = await response.json();
-  // console.log('DATA:', data);
   return data;
 };
