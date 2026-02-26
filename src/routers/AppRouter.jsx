@@ -8,16 +8,14 @@ import BackButton from '../components/Button/BackButton';
 
 function AppRouter() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/students" element={<Students />} />
-          <Route path="/staff" element={<Staff />} />
-          <Route path="/house" element={<House />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/students" element={<Students />} />
+        <Route path="/staff" element={<Staff />} />
+        <Route path="/house" element={<House />} />
+      </Route>
+    </Routes>
   );
 }
 
