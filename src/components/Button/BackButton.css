@@ -1,0 +1,34 @@
+.magic-btn {
+  background: #f6c76e;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 190, 70, 0.4);
+  margin: 24px 24px 0 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.magic-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: 0.6s;
+}
+
+.magic-btn:hover::before {
+  left: 100%;
+}

@@ -4,22 +4,18 @@ import Home from '../pages/Home/Home';
 import House from '../pages/House/House';
 import Students from '../pages/Students/Students';
 import Staff from '../pages/Staff/Staff';
+import BackButton from '../components/Button/BackButton';
 
 function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <MainLayout>
-              <Home />
-            </MainLayout>
-          }
-        />
-        <Route path="/students" element={<Students />} />
-        <Route path="/staff" element={<Staff />} />
-        <Route path="/house" element={<House />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/students" element={<Students />} />
+          <Route path="/staff" element={<Staff />} />
+          <Route path="/house" element={<House />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

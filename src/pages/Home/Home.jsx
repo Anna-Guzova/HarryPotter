@@ -6,6 +6,7 @@ import CategoriesSection from '../../components/CategoriesSection/CategoriesSect
 import { useCharacters } from '../../hooks/useCharacters';
 import CharacterCard from '../../components/CharacterCard/CharacterCard';
 import CharactersGrid from '../../components/CharactersGrid/CharactersGrid';
+import BackButton from '../../components/Button/BackButton';
 
 function Home() {
   const { characters, loading } = useCharacters();
