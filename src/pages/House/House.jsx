@@ -28,7 +28,7 @@ function House() {
           className={`house-tab ${house === 'Slytherin' ? 'active' : ''}`}
           onClick={() => setHouse('Slytherin')}
         >
-          <img src="/images/slytherin.png" alt="" />
+          <img src={process.env.PUBLIC_URL + '/images/slytherin.png'} alt="" />
           SLYTHERIN
         </button>
 
@@ -36,7 +36,7 @@ function House() {
           className={`house-tab ${house === 'Ravenclaw' ? 'active' : ''}`}
           onClick={() => setHouse('Ravenclaw')}
         >
-          <img src="/images/ravenclaw.png" alt="" />
+          <img src={process.env.PUBLIC_URL + '/images/ravenclaw.png'} alt="" />
           RAVENCLAW
         </button>
 
@@ -44,7 +44,7 @@ function House() {
           className={`house-tab ${house === 'Hufflepuff' ? 'active' : ''}`}
           onClick={() => setHouse('Hufflepuff')}
         >
-          <img src="/images/hufflepuff.png" alt="" />
+          <img src={process.env.PUBLIC_URL + '/images/hufflepuff.png'} alt="" />
           HUFFLEPUFF
         </button>
       </div>
