@@ -13,6 +13,13 @@
   font-size: 14px;
 }
 
+@media (max-width: 480px) {
+  .magic-btn {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}
+
 .magic-btn::before {
   content: '';
   position: absolute;

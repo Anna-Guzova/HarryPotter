@@ -13,6 +13,13 @@
   margin-right: auto;
 }
 
+@media (max-width: 768px) {
+  .house-tabs {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+}
+
 /* кнопка */
 .house-tab {
   display: flex;
@@ -34,18 +41,15 @@
   transition: 0.25s ease;
 }
 
-/* іконка */
 .house-tab img {
   width: 20px;
   height: 20px;
 }
 
-/* hover */
 .house-tab:hover {
   color: white;
 }
 
-/* активна кнопка */
 .house-tab.active {
   background: #f4c542;
   color: black;

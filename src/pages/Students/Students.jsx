@@ -13,7 +13,6 @@ function Students() {
     <div className="page">
       <div className="page-container">
         <h1 className="page-title">СТУДЕНТИ ГОГВОРТСУ</h1>
-
         <CharactersGrid characters={students} />
       </div>
     </div>

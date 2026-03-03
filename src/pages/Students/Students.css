@@ -9,12 +9,11 @@
     )
     #1a1a1a;
 
-  padding: 80px 20px;
+  margin: 0 auto;
 }
 
 .page-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 80px 20px;
 }
 
 .page-title {
@@ -24,4 +23,15 @@
   margin-bottom: 50px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 35px;
+  }
 }

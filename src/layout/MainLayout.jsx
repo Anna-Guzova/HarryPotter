@@ -1,10 +1,11 @@
+import { Outlet, useLocation } from 'react-router-dom';
 import BackButton from '../components/Button/BackButton';
-import { Outlet } from 'react-router-dom';
 
 function MainLayout({ children }) {
+  const location = useLocation();
   return (
     <main>
-      <BackButton />
+      {location.pathname !== '/' && <BackButton />}
       <Outlet />
     </main>
   );
